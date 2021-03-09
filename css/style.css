@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  line-height: 22px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100%;
+  
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-size: 19px;
+  line-height: 30px;
+}
+
+a:hover {
+  text-decoration: none!important;
+}
+
+ul li:before {
+  font-family: "FontAwesome";
+  content: "\f0a9";
+  margin: 0 5px 0 -15px;
+  color: #f56f57;
+}
+
+li {
+  list-style: none;
+  font-size: 18px;
+  line-height: 35px;
+  color: #e2e2e2;
+}
+
+.header {
+  position: relative;
+  height: 200px;
+  background-image: linear-gradient(#fff, #fff);
+  border-bottom-left-radius: 50% 20%;
+  border-bottom-right-radius: 50% 20%;
+}
+
+blockquote{
+  padding: 2%;
+  font-style: italic;
+  line-height: 145%;
+}
+
+em{
+  margin-top: -15px;
+  text-align: right;
+  display: block;
+}
+
+/* Background Animation CSS Starts  */
+
+.wrapper{
+  width: 100%;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-color: #690f9e;
+}
+.box div{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 4px solid #777777;
+}
+.box div:nth-child(1){
+  top: 50%;
+  left: 42%;
+  animation: animate 10s linear infinite;
+}
+.box div:nth-child(2){
+  top: 70%;
+  left: 90%;
+  animation: animate 10s linear infinite;
+}
+.box div:nth-child(3){
+  top: 100%;
+  left: 30%;
+  animation: animate 9s linear infinite;
+}
+.box div:nth-child(4){
+  top: 30%;
+  left: 90%;
+  animation: animate 10s linear infinite;
+}
+.box div:nth-child(5){
+  top: 67%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+}
+.box div:nth-child(6){
+  top: 80%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+}
+.box div:nth-child(7){
+  top: 60%;
+  left: 80%;
+  animation: animate 15s linear infinite;
+}
+.box div:nth-child(8){
+  top: 45%;
+  left: 25%;
+  animation: animate 16s linear infinite;
+}
+.box div:nth-child(9){
+  top: 100%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+}
+.box div:nth-child(10){
+  top: 100%;
+  left: 50%;
+  animation: animate 5s linear infinite;
+}
+
+@keyframes animate{
+  0%{
+      transform:  scale(0) translateY(0) rotate(0);
+      opacity: 1;
+  }
+  100%{
+      transform:  scale(1.3) translateY(-90px) rotate(360deg);
+      opacity: 1;
+  }
+}
+/* Background Animation CSS Ends  */
+
+.main h1 {
+  font-weight: bold;
+  line-height: 50px;
+  color: #fff;
+}
+
+.left-side h2 {
+  font-size: 25px;
+  line-height: 38px;
+  font-weight: bold;
+  color: #f56f57;
+}
+
+.right-side {
+  margin-top: 5rem;
+}
+
+.card {
+  float: right;
+}
+
+.card-body h5 {
+  color: #494949;
+}
+
+
+/* Footer Area Starts  */
+
+footer.footer-area {
+	padding: 7rem 0 1px 0;
+	background: #fff;
+	clip-path: polygon(90% 0%, 100% 20%, 100% 100%, 0 100%, 0 52%);
+
+}
+
+footer.footer-area .social h5{
+	color: #000;
+	font-size: 40px; 
+	font-weight: 500;
+	font-family: 'Pacifico', cursive!important;
+	background: -webkit-linear-gradient(#ff00fa, #ff0000);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer.footer-area .social a > i{
+	margin: 0.7rem;
+}
+
+footer.footer-area .social a > .facebook:hover{
+	color: #04115d;
+}
+footer.footer-area .social a > .instagram:hover{
+	color: #d0141f;
+}
+footer.footer-area .social a > .twitter:hover{
+	color: #dc5f38;
+}
+footer.footer-area .social a > .github:hover{
+	color: #000000;
+}
+footer.footer-area .social a > .linkedin:hover{
+	color: #00345d;
+}
+footer.footer-area .social a > .telegram:hover{
+	color: #e91e63;
+}
+
+
+
+footer.footer-area .copyrights .para{
+	color: #000;
+  line-height: 36px;
+	/* font-weight: 600; */
+}
+
+footer.footer-area .copyrights .para > i{
+	color: #ff1a51;
+}
+
+footer.footer-area .copyrights .para > span{
+	color: #9C27B0;
+	font-weight: 600;
+}
+
+/* Footer Area Ends  */
+
+/* Media Query Starts  */
+
+@media screen and (max-width: 600px) {
+  .main h1 {
+    font-size: 2rem !important;
+  }
+  ul li:before {
+    margin: 0 10px 0 0;
+  }
+  .card {
+    width: auto !important;
+    float: none !important;
+  }
+  footer.footer-area {
+    clip-path: polygon(79% 14%, 100% 20%, 100% 100%, 0 100%, 0 30%)
+  }
+  .box{
+    display: none;
+  }
+}
+
+/* Media Query Ends  */
